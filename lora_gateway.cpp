@@ -32,7 +32,7 @@ int main (int argc, char *argv[]){
         else
         printf("Setting CRC: ERROR \n");
 
-        e= sx1272.setPower('M');
+        e= sx1272.setPower('H');
         if (e==0)
         printf("Setting Power: SUCCESS\n");
         else
@@ -43,6 +43,8 @@ int main (int argc, char *argv[]){
         printf("Setting Node address: SUCCESS\n");
         else
         printf("Setting Node address: ERROR \n");
+
+        delay(1000);
 
         while(1)
         {
