@@ -20,7 +20,7 @@ int main (int argc, char *argv[]){
         else
         printf("Setting Header ON: ERROR \n");
 
-        e= sx1272.setChannel(CH_2_BW_500);
+        e= sx1272.setChannel(CH_3_BW_250);
         if (e==0)
         printf("Setting Channel: SUCCESS\n");
         else
