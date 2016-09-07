@@ -32,7 +32,7 @@ int main (int argc, char *argv[]){
         else
         printf("Setting CRC: ERROR \n");
 
-        e= sx1272.setPower('H');
+        e= sx1272.setPower('M');
         if (e==0)
         printf("Setting Power: SUCCESS\n");
         else
