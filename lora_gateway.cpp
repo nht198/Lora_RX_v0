@@ -58,7 +58,7 @@ int main (int argc, char *argv[]){
                 printf(my_packet);
                 }
                 else printf("error\n");
-                delay(4000);
+ //               delay(4000);
         }
 return 0;
 }
