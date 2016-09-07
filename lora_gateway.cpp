@@ -1,5 +1,6 @@
 #include "SX1272.h"
 char my_packet[100];
+char message1 [] = "Hello morning";
 int main (int argc, char *argv[]){
         int e;
         e=sx1272.ON();
@@ -48,7 +49,7 @@ int main (int argc, char *argv[]){
 
         while(1)
         {
-                e= sx1272.sendPacketTimeoutACK(6,"jhjsgdf");
+                e= sx1272.sendPacketTimeoutACK(6,message1);
                 if (e==0)
                 {
                         printf("packet received success\n");
@@ -56,7 +57,7 @@ int main (int argc, char *argv[]){
    //     for (unsigned int i = 0; i < sx1272.packet_received.length; i++) {
     //            my_packet[i] = (char)sx1272.packet_received.data[i];
 		//		printf("%x\n",sx1272.packet_received.data[i]);
-                        }
+       //                 }
       //          printf(my_packet);
                 }
                 else printf("error\n");
