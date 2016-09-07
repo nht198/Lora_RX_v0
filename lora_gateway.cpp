@@ -50,9 +50,10 @@ int main (int argc, char *argv[]){
                 if (e==0)
                 {
                         printf("packet received success\n");
-						printf(sx1272.packet_received.length);
+						 printf("%x\n",sx1272.packet_received.length);
         for (unsigned int i = 0; i < sx1272.packet_received.length; i++) {
                 my_packet[i] = (char)sx1272.packet_received.data[i];
+				printf("%x\n",sx1272.packet_received.data[i]);
                         }
                 printf(my_packet);
                 }

@@ -36,7 +36,7 @@
 
 #define SX1272_SS 10
 
-#define SX1272_debug_mode 2
+#define SX1272_debug_mode 1
 
 //! MACROS //
 #define bitRead(value, bit) (((value) >> (bit)) & 0x01)  // read a bit
