@@ -1,6 +1,5 @@
 #include "SX1272.h"
 char my_packet[100];
-char message1 [] = "Hello morning";
 int main (int argc, char *argv[]){
         int e;
         e=sx1272.ON();
@@ -45,7 +44,6 @@ int main (int argc, char *argv[]){
         else
         printf("Setting Node address: ERROR \n");
 
-        delay(1000);
 
         while(1)
         {
