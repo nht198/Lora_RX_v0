@@ -47,7 +47,7 @@ int main (int argc, char *argv[]){
 
         while(1)
         {
-                e= sx1272.receivePacketTimeout(10000);
+                e= sx1272.receivePacketTimeoutACK(10000);
                 if (e==0)
                 {
                         printf("packet received success\n");
